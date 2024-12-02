@@ -3,32 +3,78 @@
   padding: 0;
 }
 
-ul.parent {
+.navigation ul.parent {
   list-style: none;
   display: flex;
   justify-content: center;
   background-color: grey;
+  height: 50px;
+  width: 100%;
 }
-ul.parent li {
+.navigation ul.parent li {
   position: relative;
 }
-ul.parent li a {
-  padding: 10px;
+.navigation ul.parent li a {
+  top: 5px;
+  padding: 5px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
+  background-color: gold;
 }
-ul.parent li a:hover {
+.navigation ul.parent li a:hover {
   color: red;
 }
-ul.parent li ul {
+.navigation ul.parent li ul {
   position: absolute;
   display: none;
   background-color: gray;
+  list-style: none;
   width: 120px;
   top: 24px;
 }
-ul.parent li:hover ul {
+.navigation ul.parent li:hover ul {
   display: block;
+}
+
+.header {
+  top: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.content .products {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  padding: 10px;
+  justify-content: space-between;
+}
+.content .products li {
+  list-style: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: green;
+  color: #fff;
+}
+.content .products li button:hover {
+  color: red;
+  background-color: #fff;
+  cursor: pointer;
+}
+.content .products li img {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  left: 10PX;
+  bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
