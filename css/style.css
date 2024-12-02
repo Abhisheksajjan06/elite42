@@ -50,6 +50,7 @@
   float: left;
   padding: 10px;
   justify-content: space-between;
+  align-items: space-between;
 }
 .content .products li {
   list-style: none;
